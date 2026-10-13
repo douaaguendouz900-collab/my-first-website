@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOUAA's portfolio </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Playfair+Display&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        color: #3A230A;
+        background-color: #EEE9C1;
+        font-family: 'playfair display', serif;
+        margin: 0;
+      }
+      p{
+        opacity: 0.9;
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
+      header {
+        background-color: #EEE9C1;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        
+      }
+      section {
+        padding: 10px;
+        
+      }
+      h2{
+        margin-top: 30px;
+        font-size: 30px;
+      }
+      p, h2 {
+        margin-left: 70px;
+      }
+      #name {
+        color: #3A230A;
+
+        font-family: 'Amarante', cursive;
+        font-weight: 300;
+        font-size: 45px;
+        margin-bottom: 0;
+        margin-top: 70px;
+      }
+      #header{
+        margin-left: 70px;
+      }
+      #potato {
+        width: 150px;
+        height: 150px;
+        margin-left: 110px;
+        margin-top: 20px;
+      }
+      #description {
+        margin-left: 0px;
+      }
+      #about,#projects{
+        background-color: #E4DDB0;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .skl {
+        color: #3A230A;
+        background-color: #569ba2;
+        font-family: 'play';
+        font-size: 19px;
+        padding: 5px 10px;
+        margin: 7px;
+        display: inline-block;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+      }
+      .skl:hover {
+        transform: translateY(-7px);
+        transition: all 0.3s ease;
+      }
+      #skl2 {
+        text-align: center;
+      }
+      #p-d-s {
+        text-align: center;
+        margin-bottom: 20px;
+        
+      }
+      #p-d {
+        margin-top: 40px;
+        background-color: #569ba2;
+        padding: 70px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+      #p-d:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+      }
+      
+      nav a{
+        color: #3A230A;
+        font-family: 'Amarante', cursive;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+      nav a {
+        position: relative;
+      }
+      nav a.active::after {
+        content: "";
+        position: absolute;
+        inset:-6px;
+        background-color:#569ba2;
+        border-radius: 20px;
+        z-index: -1;
+        transition: all 0.3s ease;
+      }
+      
+      #about,#skills,#projects,#header {
+        min-height: 100vh;
+        box-sizing: border-box
+      }
+      .social-icons{
+        display: flex;
+        gap: 20px;
+      }
+      .social-icons a {
+          display: flex;
+          gap: 25px;
+          justify-content: center;
+      }
+
+      .social-icons a {
+          color: #3A230A;
+          font-size: 40px;
+          text-decoration: none;
+          transition: 0.3s;
+          margin-bottom: 40px;
+          margin-left: 70px;
+      }
+      .social-icons span{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .social-icons a:hover {
+          transform: translateY(-5px);
+      }
+    
+    </style>
+  </head>
+  <body>
+    
+    <header >
+      <nav>
+        <span id="shadow"></span>
+        <a class="active" href="#header">Home</a>
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="header">
+      <h1 id="name">DOUAA GUENDOUZ</h1>
+      <p id="description">a computer science student exploring.</p>
+      <div>
+        <img id="potato" src="images/download.png" alt="shy potato">
+        <p> Please reach out to me! I'd like to build something amazing together while learning along the way. </p>
+      </div>
+    </section>
+    
+    <section id ="about">   
+      <h2>About me</h2>
+      <p> I am still in the learning process and eager to expand my knowledge and skills in the field of computer science. </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <section id="skl2">
+        <span class="skl">Python</span>
+        <span class="skl">SQL</span>
+        <span class="skl">HTML/CSS</span>
+        <span class="skl">C</span>
+        <span class="skl">Java</span>
+      </section>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <section id="p-d-s">
+        <span id="p-d">coming soon...</span>
+      </section>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Info</h2>
+      <div class="social-icons">
+        <span id="email-icon">
+          <a href="mailto:douaaguendouz900@gmail.com" aria-label="Email me">
+              <i class="fa-solid fa-envelope"></i>
+          </a>
+          <p>douaaguendouz900@gmail.com</p>
+        </span>
+
+        <span id="github-icon">
+          <a href="https://github.com/douaaguendouz900-collab" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+          </a>
+          <p>douaaguendouz900-collab</p>
+        </span>
+        <span id="linkedin-icon">
+          <a href="https://www.linkedin.com/in/douaa-guendouz-a86bab429/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <p>Douaa Guendouz</p>
+        </span>
+
+      </div>
+    </section>
+
+    <script>
+      const links = document.querySelectorAll("nav a");
+      const sections = document.querySelectorAll("#header, #about, #skills, #projects, #contact");
+      const shadow = document.getElementById("shadow");
+      let clicking = false;
+
+      function moveShadow(link) {
+        shadow.style.left = link.offsetLeft + "px";
+        shadow.style.width = link.offsetWidth + "px";
+      }
+
+      function updateShadow() {
+        console.log("scroll fired, clicking =", clicking);
+        if (clicking) return;
+
+        const middle = window.innerHeight / 2;
+
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+
+          if (rect.top <= middle && rect.bottom > middle) {
+            const current = document.querySelector('nav a[href="#' + section.id + '"]');
+            links.forEach((l) => l.classList.remove("active"));
+            current.classList.add("active");
+            moveShadow(current);
+          }
+        });
+      }
+
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          clicking = true;
+          links.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+          moveShadow(link);
+
+          setTimeout(() => {
+            clicking = false;
+            updateShadow();
+          }, 1000);
+        });
+      });
+
+      window.addEventListener("scroll", updateShadow);
+
+      window.addEventListener("load", () => {
+        moveShadow(document.querySelector("nav a.active"));
+      });
+    </script>
+  </body>
+  
+</html>
